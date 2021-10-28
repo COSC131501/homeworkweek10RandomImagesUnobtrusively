@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Swapping Images</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+</head>
+
+<style> 
+  body{
+  background-image: url(logo.png);
+}
+</style>
+
+<body>
+  <h1>Lesson19- Hmwk2 - Random Images - Unobtrusively</h1>
+  <i>
+    <p>Following is a random image. To see a new image
+      just reload this page</p>
+  </i>
+  <p id="display"></p>
+
+  <script>
+
+  // Random Image Generator
+  // Array with random image links is created. You can add as many links as you want/need.
+
+  // Regular Array
+  
+  var randomImage = new Array();
+
+    randomImage[0] = "https://upload.wikimedia.org/wikipedia/en/1/17/TheStoryBegins.jpg";
+    randomImage[1] = "https://upload.wikimedia.org/wikipedia/en/4/4a/TWICE%28%ED%8A%B8%EC%99%80%EC%9D%B4%EC%8A%A4%29_Signal_%28EP%29.jpg";
+    randomImage[2] = "https://upload.wikimedia.org/wikipedia/en/1/16/Twice_%E2%80%93_What_Is_Love%3F_cover.jpg";
+    randomImage[3] = "https://upload.wikimedia.org/wikipedia/en/b/bf/Twice_Summer_Nights.jpg";
+    randomImage[4] = "https://upload.wikimedia.org/wikipedia/en/c/c7/Twice_%E2%80%93_Yes_or_Yes.png";
+    randomImage[5] = "https://upload.wikimedia.org/wikipedia/en/0/09/Twice_-_Fancy_You.png";
+    randomImage[6] = "https://upload.wikimedia.org/wikipedia/en/3/33/Twice_-_Feel_Special.png";
+    randomImage[7] = "https://upload.wikimedia.org/wikipedia/en/9/90/Twice_-_Eyes_Wide_Open.png";
+    randomImage[8] = "https://upload.wikimedia.org/wikipedia/en/8/89/Twice_-_Perfect_World.png";
+    randomImage[9] = "https://upload.wikimedia.org/wikipedia/en/8/87/Twice_-_Taste_of_Love_%28EP%29.png";
+
+    function getRandomImage() {
+      var number = Math.floor(Math.random() * randomImage.length);
+      document.write('<img src="' + randomImage[number] + '" />');
+    }
+    getRandomImage()
+  //-->
+  </script>
+</body><br><br><br>
+
+<a href="http://csnet.southtexascollege.edu/localuser/jflor118/">Go Back To Homepage: Juan L. Flores</a>
+
+</html>
